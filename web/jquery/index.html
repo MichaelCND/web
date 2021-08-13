@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scrips/jquery-3.6.0.min.js"></script>
+    <script src="scrips/learnJQ.js"></script>
+</head>
+<body>
+
+    like/dislike на jq. не iframe 
+    <div id="content1">
+        <div class="LikeDiv">
+            <span class="LikeSpan">что я люблю</span>
+            <ul id="parentLike" class="like" >
+
+            </ul>
+        </div>
+
+        <div class="btdiv" >
+            <button id="bt1" class="bt1" ><</button>
+            <br />
+             <button id="bt2" class="bt2">></button>
+        </div>
+
+        <div class="dontLikeDiv">
+            <span class="dontLikeSpan">что я не люблю</span>
+            <ul id="parentDontLike" class="parenDNTLike" >
+            </ul>
+        </div>
+
+    </div>
+
+    <br />
+
+    <div>
+like/dislike на чистом js
+    </div>
+
+    <div>
+        <iframe
+    title="Inline Frame Example"
+    width="500"
+    height="150"
+    src="../js_continue/index.html">
+</iframe>
+    </div>
+
+    <br />
+
+    <div>
+     создание машины на чистом js
+    </div>
+    <div>
+     <iframe
+     title="Inline Frame Example"
+     width="500"
+     height="250"
+     src="../js_continue/object/index.html">
+ </iframe>
+</div>
+
+<br />
+
+<div>
+ самое начало js
+</div>
+<div>
+ <iframe
+ title="Inline Frame Example"
+ width="500"
+ height="400"
+ src="../js_start/learnJS/index.html">
+</iframe>
+</div>
+
+<div>
+    машина на jq
+</div>
+
+<h3>создаём машину</h3>
+    <div>
+        сколько двигателей ставим??
+        <input type="text" id="engine"  />
+        <input type="text" id="engine-type" data-electric="8"/>
+        
+    </div>
+
+    <div>
+         кузов
+        <input type="text" id="body" />
+    </div>
+
+    <div>
+        сколько колёс будет?
+        <input type="text" id="wheels" />
+        <select id="select">
+
+        </select>
+    </div>
+
+    <div>
+        сколько дверей?
+        <input type="text" id="doors" />
+    </div>
+
+    <div>
+        <button id="create">создать</button>
+        <button id="read">readObj</button>
+        <button id="clone">clone</button>
+        <button id="beep">beep</button>
+    </div>
+
+    <div>
+        бренд
+       <input type="text" id="brand" />
+   </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="Script.js"></script>
+</head>
+<body onload="load()">
+    <h3>создаём машину</h3>
+    <div>
+        сколько двигателей ставим??
+        <input type="text" id="engine"  />
+        <input type="text" id="engine-type" data-electric="8"/>
+    </div>
+
+    <div>
+         кузов
+        <input type="text" id="body" />
+    </div>
+
+    <div>
+        сколько колёс будет?
+        <input type="text" id="wheels" />
+        <select id="select">
+
+        </select>
+    </div>
+
+    <div>
+        сколько дверей?
+        <input type="text" id="doors" />
+    </div>
+
+    <div>
+       <button onclick="create()">создать</button>
+        <button onclick="read()">readObj</button>
+        <button onclick="clone()">clone</button>
+    </div>
+</body>
+</html>

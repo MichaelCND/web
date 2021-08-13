@@ -1,0 +1,13 @@
+  
+.be {
+width: 1200px;
+height:200px;
+background-color: red;
+animation-name: example;
+animation-duration: 2s;
+}
+
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}

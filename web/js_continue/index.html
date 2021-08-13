@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="Script.js"></script>
+</head>
+<body onload="start()">
+    <div id="content1">
+        <div class="LikeDiv">
+            <span class="LikeSpan">что я люблю</span>
+            <ul id="parentLike" class="like" onclick="selectItem(event, 'parentLike')">
+
+            </ul>
+        </div>
+
+        <div class="btdiv" >
+            <button id="bt1" class="bt1" onclick="moveToLike()"><</button>
+            <br />
+             <button id="bt2" class="bt2" onclick="moveToDislike()">></button>
+        </div>
+
+        <div class="dontLikeDiv">
+            <span class="dontLikeSpan">что я не люблю</span>
+            <ul id="parentDontLike" class="parenDNTLike" onclick="selectItem(event, 'parentDontLike')">
+            </ul>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+.d {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: ex;
+    animation-duration: 3s;
+}
+@keyframes ex {
+    from {background-color: red;}
+    to   {background-color: yellow;}
