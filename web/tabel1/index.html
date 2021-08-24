@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts/jquery-3.6.0.min.js"></script>
+    <script src="scripts/script.js"></script>
+</head>
+<body>
+    <h2>you can select only one parametr</h2>
+    <div class="selects">
+    <p style="margin-left: 0px;">бренд</p>
+    <select id="selectBrand">
+        <option>BMW</option>
+        <option>ford</option>
+        <option>kia</option>
+        <option>tesla</option>
+    </select>   
+
+    <p>год</p>
+    <select id="selectYear">
+        <option>2020</option>
+        <option>2021</option>
+    </select>
+
+    <p>цена</p>
+    <select id="selectPrice">
+        <option>avg:4350000 rub</option>
+        <option>avg:8000000 (on Avito) rub</option>
+        <option>avg:2000000 rub</option>
+        <option>avg:11000000 rub</option>
+    </select>
+</div>
+
+<table id="table">
+<thead>
+    <tr>
+        <th>brand</th>
+        <th>model</th>
+        <th>year</th>
+        <th>price</th>
+    </tr>
+</thead>
+<tbody id="tBody">
+</tbody>
+</table>
+</body>
+</html>
