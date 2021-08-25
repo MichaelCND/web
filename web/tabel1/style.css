@@ -1,6 +1,6 @@
 .selects {
     display: flex;
-    flex-direction: row;
+    flex-direction:column;
 }
 table, th, td {
     border: 3px solid black;
@@ -17,4 +17,8 @@ select {
 }
 p {
     margin-left: 15px;
+}
+.table {
+    margin-top: 40px;
+    margin-left: 10px;
 }

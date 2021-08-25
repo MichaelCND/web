@@ -8,12 +8,40 @@ $(document).ready(function(){
     
     fillTable(cars)
 
+    $.each(cars,function(key,value){
+        $('#selectBrand').append($('<option></option>').val(value.brand).html(value.brand))
+    })
+
+    $.each(cars,function(key,value){
+        $('#selectModel').append($('<option></option>').val(value.model).html(value.model))
+    })
+
+    $.each(cars,function(key,value){
+        $('#selectYear').append($('<option></option>').val(value.year).html(value.year))
+    })
+    $.each(cars,function(key,value){
+        $('#selectPrice').append($('<option></option>').val(value.price).html(value.price))
+    })
+
     $('#selectBrand').change(function(){
         var filteredCar = [];
         var choice = $('#selectBrand').val();
         $.each(cars, function(key, value){ 
 
             if(choice == value.brand) {
+                filteredCar.push(value);  
+            }
+        })
+        fillTable(filteredCar)
+    })
+
+    
+    $('#selectModel').change(function(){
+        var filteredCar = [];
+        var choice = $('#selectModel').val();
+        $.each(cars, function(key, value){ 
+
+            if(choice == value.model) {
                 filteredCar.push(value);  
             }
         })
@@ -70,4 +98,3 @@ $(document).ready(function(){
     }
 
 })
-
