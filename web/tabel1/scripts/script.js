@@ -16,61 +16,37 @@ $(document).ready(function(){
         $('#selectModel').append($('<option></option>').val(value.model).html(value.model))
     })
 
-    $.each(cars,function(key,value){
+    $.each(cars.filter((v, i, a) => a.indexOf(v) === i),function(key,value){
         $('#selectYear').append($('<option></option>').val(value.year).html(value.year))
     })
     $.each(cars,function(key,value){
         $('#selectPrice').append($('<option></option>').val(value.price).html(value.price))
     })
 
-    $('#selectBrand').change(function(){
-        var filteredCar = [];
-        var choice = $('#selectBrand').val();
+    $('select').change(function(){
+        
+        change();
+    })
+
+    var filteredCar = [];
+
+    function change() {
+        var model = $('#selectModel').val();
+        var brand = $('#selectBrand').val();
+        var year = $('#selectYear').val();
+        var price = $('#selectPrice').val();
+
+        filteredCar = [];
+
         $.each(cars, function(key, value){ 
 
-            if(choice == value.brand) {
+            if(brand == value.brand || model == value.model || year == value.year || price == value.price) {
                 filteredCar.push(value);  
             }
         })
         fillTable(filteredCar)
-    })
+    }
 
-    
-    $('#selectModel').change(function(){
-        var filteredCar = [];
-        var choice = $('#selectModel').val();
-        $.each(cars, function(key, value){ 
-
-            if(choice == value.model) {
-                filteredCar.push(value);  
-            }
-        })
-        fillTable(filteredCar)
-    })
-
-    $('#selectYear').change(function(){
-        var filteredCar = [];
-        var choice = $('#selectYear').val();
-        $.each(cars, function(key, value){ 
-
-            if(choice == value.year) {
-                filteredCar.push(value);  
-            }
-        })
-        fillTable(filteredCar)
-    })
-
-    $('#selectPrice').change(function(){
-        var filteredCar = [];
-        var choice = $('#selectPrice').val();
-        $.each(cars, function(key, value){ 
-
-            if(choice == value.price) {
-                filteredCar.push(value);  
-            }
-        })
-        fillTable(filteredCar)
-    })
 
     function fillTable(cars) {
         var $tbody = $("#tBody");    

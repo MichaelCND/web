@@ -8,36 +8,44 @@
     <script src="scripts/script.js"></script>
 </head>
 <body>
-    <h2>you can select only one parametr</h2>
+    <h2>you can choose all of car properties</h2>
     <div class="selects">
+    <div class="select" style="width: 100px;">
     <p>бренд</p>
     <select id="selectBrand">
         
     </select>   
     </div>
     
-    <div class="selects">
+    <div class="select" style="width: 250px;">
         <p>модель</p>
         <select id="selectModel">
             
         </select>
         </div>
 
-    <div class="selects">
+    <div class="select" style="width: 150px;">
     <p>год</p>
     <select id="selectYear">
         
     </select>
     </div>
 
-    <div class="selects"> 
+    <div class="select" style="width: 150px;"> 
     <p>цена</p>
     <select id="selectPrice">
         
     </select>
 </div>
+</div>
 <div class="table">
 <table id="table">
+    <colgroup>
+        <col style="width: 100px;">
+        <col style="width: 250px;">
+        <col style="width: 150px;">
+        <col style="width: 150px;">
+    </colgroup>
 <thead>
     <tr>
         <th>brand</th>

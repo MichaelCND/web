@@ -1,6 +1,6 @@
 .selects {
     display: flex;
-    flex-direction:column;
+    flex-direction:row;
 }
 table, th, td {
     border: 3px solid black;
@@ -13,12 +13,13 @@ visibility: hidden;
 visibility: visible;
 }
 select {
+    width: 100%;
     margin-left: 10px;
 }
 p {
     margin-left: 15px;
 }
 .table {
-    margin-top: 40px;
-    margin-left: 10px;
+    margin-top: 20px;
+    margin-left: 2px;
 }
